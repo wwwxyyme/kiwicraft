@@ -1,0 +1,14 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑","宋体",Arial, Helvetica, sans-serif;
+}
+
+.top{
+    height: 132px;
+    overflow: hidden;
+    background: #FFF;
+    border-bottom: 2px solid #ba0e02;
+    position: relative;
+}
