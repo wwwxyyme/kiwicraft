@@ -1,0 +1,87 @@
+
+// 函数定义
+
+.transition(@second:0.5s) {
+  transition:all @second;
+  -moz-transition:all @second;
+  -webkit-transition:all @second;
+  -o-transition:all @second;
+}
+
+.transform(@scaleX, @scaleY){
+    -ms-transform:scale(@scaleX,@scaleY);
+    -moz-transform:scale(@scaleX,@scaleY);
+    -webkit-transform:scale(@scaleX,@scaleY);
+    -o-transform:scale(@scaleX,@scaleY);
+}
+
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  box-shadow:         @style @c;
+  -webkit-box-shadow: @style @c;
+  -moz-box-shadow:    @style @c;
+  
+}
+
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  box-shadow:         @style @c;
+  -webkit-box-shadow: @style @c;
+  -moz-box-shadow:    @style @c;
+}
+.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
+  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+}
+
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.animation-duration(@second:1s){
+    animation-duration: @second;
+    -moz-animation-duration: @second;
+    -ms-animation-duration: @second;
+    -o-animation-duration: @second;
+    -webkit-animation-duration: @second;
+}
+.transition-delay(@second:1s){
+    transition-delay: @second;
+    -moz-transition-delay: @second;
+    -ms-transition-delay: @second;
+    -o-transition-delay: @second;
+    -webkit-transition-delay: @second;
+}
+
+
+
+
+
+
+// @-webkit-keyframes proType__info--hover {
+
+//   0, 100% {
+//     margin: 0;
+//   }
+//   50% {
+//     margin: 128px 0 0;
+//   }
+// }
+
+// @keyframes proType__info--hover {
+
+//   0, 100% {
+//     margin: 0;
+//   }
+//   50% {
+//     margin: 128px 0 0;
+//   }
+// }
+
+
+.wrap () {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
