@@ -15,6 +15,13 @@
     -o-transform:scale(@scaleX,@scaleY);
 }
 
+.rotate(@angle){
+  transform:rotate(@angle);
+  -ms-transform:rotate(@angle);
+  -moz-transform:rotate(@angle);
+  -webkit-transform:rotate(@angle);
+  -o-transform:rotate(@angle);
+}
 
 .box-shadow(@style, @c) when (iscolor(@c)) {
   box-shadow:         @style @c;

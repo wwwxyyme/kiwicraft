@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<title>Kiwicraft</title>
+
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<script type="text/javascript" src="js/less.min.js"></script>
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="top">
+	<div class="container">
+        <div class="topLogin">
+            <a href="login.html" class="topLogin__link">Sign In</a>
+            <i class="topLogin__i">|</i>
+            <a href="register.html" class="topLogin__link">Register</a>
+            <div class="searchBox">
+                <input class="searchBox__keyword" type="text" placeholder="Keyword">
+                <input class="searchBox__submit" type="submit" value=" ">
+            </div>
+        </div>
+        <div class="nav">
+            <ul class="nav__body">
+                <li class="nav__item">
+                    <a class="nav__link" href="products.html">products</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="about.html">about</a>
+                </li>
+                <li class="nav__logo">
+                    <a class="nav__link--logo" href="index.html"><img src="images/logo.png"></a></a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="news.html">news</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="contact.html">contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="banner banner-inside banner--pro">
+    <img src="images/bannerAbout.jpg" class="banner-inside__img">
+</div>
+<div class="clearfix"></div>
+
+<div class="content">
+    <div class="container">
+
+
+        
+            <div class="newView">
+            	<div class="newView__title">
+                	<h3>佩戴首饰要注意的禁忌</h3>
+                    <p>发布时间：2017/2/22</p>
+                </div>
+                <div class="newView__info">
+                    <p>&nbsp;</p>
+                    <p>①忌戒指戴的太紧：受箍的皮肤、肌肉易成环状畸形，时间长了，容易影响手指血液循环而产生局部坏死。</p>
+                    <p style="font-size:14px;line-height:30px;color:#333;">①忌戒指戴的太紧：受箍的皮肤、肌肉易成环状畸形，时间长了，容易影响手指血液循环而产生局部坏死。</p>
+                    <p style="font-size:14px;line-height:30px;color:#333;">②忌夹式的耳环戴的时间过久：由于耳垂血液循环丰富，夹式耳环戴久了会影响耳垂血液的循环，造成耳垂部位麻木，肿痛。</p>
+                    <p style="font-size:14px;line-height:30px;color:#333;">③忌佩戴粗糙的项链：脖颈皮肤薄，因此戴项链的部位很容易受到伤害引起炎症。因此，佩戴项链从生理卫生的角度来讲，应选择加工精细的制品，不要用镀铬、镀镍、镀水银或铅锡合金制品，否则会造成局部皮肤的损害。此外，洗澡、午休、睡觉时应将项链取下来。</p>
+                </div>
+                
+                <div class="clearfix"></div>
+                <div class="backBox">
+                    
+                    <p class="backBox_textLeft">上一篇:<a href="?flowNo=8" title="优专业-琪雅美容专业实力">优专业-琪雅美容专业实力</a></p>
+                    <p class="backBox_textLeft">下一篇:<a href="?flowNo=8" title="心服务-琪雅终端运营实力">心服务-琪雅终端运营实力</a></p>
+                    
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div class="foot">
+    <div class="container">
+        <p class="foot__left">Copyright © 2016 lusciouskin  All Rights Reserved. </p>
+        <ul class="foot__right">
+            <li class="foot__li">
+                <a href="#"><i class="foot__i fa fa-facebook-official"></i></a>
+            </li>
+            <li class="foot__li">
+                <a href="#"><i class="foot__i fa fa-instagram"></i></a>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+
+<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".jqzoom").imagezoom();
+		$("#thumblist li a").click(function() {
+			$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+			$(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+			$(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	$(function() {
+        $("#proNum__btn--add").click(function(){
+            if(parseFloat($("#proNum__input").val()) < parseFloat($("#proNum__input").attr("data-maxNum"))){
+                $("#proNum__input").val(parseFloat($("#proNum__input").val())+1);
+            }
+        });
+        $("#proNum__btn--reduce").click(function(){
+            if(parseFloat($("#proNum__input").val()) > parseFloat($("#proNum__input").attr("data-minNum"))){
+                $("#proNum__input").val(parseFloat($("#proNum__input").val())-1);
+            }
+        });
+        $("#proNum__input").change(function(){
+            if(parseFloat($("#proNum__input").val()) > parseFloat($("#proNum__input").attr("data-maxNum"))){
+                $("#proNum__input").val(parseFloat($("#proNum__input").attr("data-maxNum")));
+            }
+            if(parseFloat($("#proNum__input").val()) < parseFloat($("#proNum__input").attr("data-minNum"))){
+                $("#proNum__input").val(parseFloat($("#proNum__input").attr("data-minNum")));
+            }
+        });
+	});
+</script>
+
+
+</body>
+</html>
